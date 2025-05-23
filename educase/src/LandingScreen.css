@@ -1,0 +1,37 @@
+.landing-container {
+max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+
+}
+
+.landing-content {
+  margin-bottom: 30px;
+  padding-top: 260px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;                  
+  max-width: 300px;             
+}
+
+.primary-btn {
+  background-color: #5b21b6;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}

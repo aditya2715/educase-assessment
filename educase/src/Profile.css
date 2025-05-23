@@ -1,0 +1,93 @@
+.account-settings-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+
+.account-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  padding: 2rem;
+}
+
+
+.account-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+
+.account-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.profile-image {
+  position: relative;
+  width: 100px; 
+  height: 100px; 
+  flex-shrink: 0;
+  margin-right: 10px;;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+}
+
+
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 1.0rem;
+  color: #222;
+}
+
+.profile-info p {
+  margin: 4px 0 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}

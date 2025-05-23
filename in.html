@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        *
+        { 
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- index.html -->
+    <table>
+        <tr>
+            <td colspan="2"><h1>WElcome, This is Unique Computers</h1></td>
+        </tr>
+        <tr>
+            <td bgcolor="orange"><div id="one"></div></td>
+            <td bgcolor="pink"><div id="two"></div></td>
+        </tr>
+    </table>
+
+    <!-- Component.js -->
+    <script type="text/babel">
+        function Left()
+        {
+            return(
+                <div>
+                    <h1>Unique Computers</h1>
+                    <h2>The BEst One</h2>
+                </div>
+            );
+        }
+        function Right()
+        {
+            return <h1>This is Right Section</h1>;
+        }
+
+        // Index.js
+        const a = document.getElementById("one");
+        const b = ReactDOM.createRoot(a);
+        b.render(<Left/>);
+
+        const p = document.getElementById('two');
+        const q = ReactDOM.createRoot(p);
+        q.render(<Right/>);
+
+
+    </script>
+
+</body>
+</html>
